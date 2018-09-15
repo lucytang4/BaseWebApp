@@ -21,9 +21,29 @@
     This is me testing out a lil html file
   </p>
 
-  <button class="btn btn-default" type="button" onclick="myFunction()">
+  <button class="btn btn-default" type="button" onclick="toggleSignIn()">
     Try it
   </button>
+
+  <form id="message-form" action="#">
+      <div class="form-group">
+        <label for="new-post-title">
+          Post title...
+        </label>
+        <input type="text" id="new-post-title">
+      </div>
+
+      <div class="form-group">
+        <label for="new-post-body">
+          Post message...
+        </label>
+        <textarea rows="3" id="new-post-body"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-default" onclick="handleMessageFormSubmit()">
+        Add post
+      </button>
+    </form>
 
   <div id="doge-image"/>
 
